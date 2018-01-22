@@ -1,0 +1,536 @@
+
+ <!DOCTYPE HTML>
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Github+hexo,搭建博客也没有那么难 | Mengse&#39;Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="MENGSE">
+    
+
+    
+    <meta name="description" content="经过几天的摸打滚爬，踩了不少的坑，终于把自己的博客搭建出来了 ，搭建自己的博客，我觉得一方面可以做笔记，可以提高我的写作能力和加强语文功底，咸鱼的表达能力实在是弱。另一个方面，自己懂了技术点，要让别人也能懂，这也是需要我们慢慢培养的能力。废话不多说。直接上！  搭建步骤 搭建环境准备（node.js和git环境，github的账号注册） 安装HEXO 配置HEXO 将Hexo与github pa">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Github+hexo,搭建博客也没有那么难">
+<meta property="og:url" content="http://yoursite.com/2018/01/22/HEXO+Github,搭建博客也没有那么难/index.html">
+<meta property="og:site_name" content="Mengse&#39;Blog">
+<meta property="og:description" content="经过几天的摸打滚爬，踩了不少的坑，终于把自己的博客搭建出来了 ，搭建自己的博客，我觉得一方面可以做笔记，可以提高我的写作能力和加强语文功底，咸鱼的表达能力实在是弱。另一个方面，自己懂了技术点，要让别人也能懂，这也是需要我们慢慢培养的能力。废话不多说。直接上！  搭建步骤 搭建环境准备（node.js和git环境，github的账号注册） 安装HEXO 配置HEXO 将Hexo与github pa">
+<meta property="og:updated_time" content="2018-01-22T10:07:12.713Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Github+hexo,搭建博客也没有那么难">
+<meta name="twitter:description" content="经过几天的摸打滚爬，踩了不少的坑，终于把自己的博客搭建出来了 ，搭建自己的博客，我觉得一方面可以做笔记，可以提高我的写作能力和加强语文功底，咸鱼的表达能力实在是弱。另一个方面，自己懂了技术点，要让别人也能懂，这也是需要我们慢慢培养的能力。废话不多说。直接上！  搭建步骤 搭建环境准备（node.js和git环境，github的账号注册） 安装HEXO 配置HEXO 将Hexo与github pa">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Mengse&#39;Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Mengse&#39;Blog" title="Mengse&#39;Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Mengse&#39;Blog">Mengse&#39;Blog</a></h1>
+				<h2 class="blog-motto">A fresh permeable dog</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:yoursite.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2018/01/22/HEXO+Github,搭建博客也没有那么难/" title="Github+hexo,搭建博客也没有那么难" itemprop="url">Github+hexo,搭建博客也没有那么难</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="MENGSE" target="_blank" itemprop="author">MENGSE</a>
+		
+  <p class="article-time">
+    <time datetime="2018-01-22T08:07:26.349Z" itemprop="datePublished"> Published 2018-01-22</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#搭建步骤"><span class="toc-number">1.</span> <span class="toc-text">搭建步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#简单扫盲"><span class="toc-number">2.</span> <span class="toc-text">简单扫盲</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开始配置环境"><span class="toc-number">3.</span> <span class="toc-text">开始配置环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#GIT"><span class="toc-number">3.1.</span> <span class="toc-text">GIT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Github账户注册与配置"><span class="toc-number">3.2.</span> <span class="toc-text">Github账户注册与配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Hexo"><span class="toc-number">4.</span> <span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置Hexo"><span class="toc-number">5.</span> <span class="toc-text">配置Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#初始化Hexo"><span class="toc-number">5.1.</span> <span class="toc-text">初始化Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#初次体验Hexo"><span class="toc-number">5.1.1.</span> <span class="toc-text">初次体验Hexo</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置Git个人信息"><span class="toc-number">6.</span> <span class="toc-text">配置Git个人信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置Deployment"><span class="toc-number">7.</span> <span class="toc-text">配置Deployment</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#写博客，发布文章"><span class="toc-number">8.</span> <span class="toc-text">写博客，发布文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改主题"><span class="toc-number">9.</span> <span class="toc-text">修改主题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#启用主题"><span class="toc-number">9.1.</span> <span class="toc-text">启用主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#验证主题"><span class="toc-number">9.2.</span> <span class="toc-text">验证主题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加插件"><span class="toc-number">10.</span> <span class="toc-text">添加插件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#附言"><span class="toc-number">10.1.</span> <span class="toc-text">附言</span></a></li></ol></li></ol>
+		
+		</div>
+		
+		<blockquote>
+<p>经过几天的摸打滚爬，踩了不少的坑，终于把自己的博客搭建出来了 ，搭建自己的博客，我觉得一方面可以做笔记，可以提高我的写作能力和加强语文功底，咸鱼的表达能力实在是弱。另一个方面，自己懂了技术点，要让别人也能懂，这也是需要我们慢慢培养的能力。废话不多说。直接上！</p>
+</blockquote>
+<h2 id="搭建步骤"><a href="#搭建步骤" class="headerlink" title="搭建步骤"></a>搭建步骤</h2><ol>
+<li>搭建环境准备（node.js和git环境，github的账号注册）</li>
+<li>安装HEXO</li>
+<li>配置HEXO</li>
+<li>将Hexo与github page相关联</li>
+<li>发布文章</li>
+<li>修改主题</li>
+</ol>
+<h2 id="简单扫盲"><a href="#简单扫盲" class="headerlink" title="简单扫盲"></a>简单扫盲</h2><ul>
+<li><strong>Hexo</strong></li>
+</ul>
+<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="noopener">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<ul>
+<li><strong>Github</strong></li>
+</ul>
+<p>gitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名gitHub。</p>
+<ul>
+<li><strong>Node.js</strong></li>
+</ul>
+<p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。   Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。     Node.js 的包管理器 npm，是全球最大的开源库生态系统。</p>
+<h2 id="开始配置环境"><a href="#开始配置环境" class="headerlink" title="开始配置环境"></a>开始配置环境</h2><p>###NODE.JS</p>
+<p>Node.js<a href="https://nodejs.org/en/" target="_blank" rel="noopener">官网</a> 根据自己电脑系统选择对应安装包</p>
+<h3 id="GIT"><a href="#GIT" class="headerlink" title="GIT"></a>GIT</h3><p>Git<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">官网</a>下载根据流程一路默认</p>
+<p>Windows +R 输入cmd </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br><span class="line">git --version</span><br></pre></td></tr></table></figure>
+<p>git安装成功你桌面点击右键会出现</p>
+<p>Git GUI here 和 Git BASH here</p>
+<p>显示版本号即为配置成功</p>
+<p>如果失败请重新搭建环境</p>
+<h3 id="Github账户注册与配置"><a href="#Github账户注册与配置" class="headerlink" title="Github账户注册与配置"></a>Github账户注册与配置</h3><p><em>first</em>：打开github<a href="https://github.com/" target="_blank" rel="noopener">官网</a>，在下图所示的图样中，输入<strong>用户名</strong>，<strong>邮箱</strong>，<strong>密码</strong></p>
+<p>根据注册提示，前往邮箱中确认注册，必须要<strong><em>确认注册</em></strong></p>
+<p><em>second</em>：登录github，点击页面右上角的加号，<strong>New repository</strong>创建新的项目，</p>
+<p>进入代码库的创建页面：在Repository name 填写 <strong>yourname.githui.io,yourname</strong>是当时你注册时候的名字，eg. 我的用户名是mengse,  我就应该填写mengse.github.io</p>
+<p>下方的Description(optional)可以填一些简单描述（这个不重要）</p>
+<p><em>Third</em> ：代码库设置</p>
+<p>按照流程走到这可以看见如下界面：</p>
+<p>接下来开启Github-Pages功能，点击右侧的<strong>Settings</strong>,打开这个仓库的<strong>setting</strong>界面，往下拉动，找到<strong>Github Pages</strong>，如图</p>
+<p>Github会自动帮你创建一个页面，大概10分钟左右，<strong>yourname.github,io</strong>这个网址就可以正常访问，如果没什么为题，github页面一侧相关环境配置已经完成，下面是<strong>Hexo</strong>的讲解</p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>在任意一个位置（你认为合适）创建一个文件夹，我以<strong>D:/hexo</strong>为例子讲解，在D盘目录下创建Hexo文件夹，在命令行窗口进入到该目录</p>
+<p>在命令行中输入：</p>
+<p><code>npm install hexo-cli -g</code></p>
+<p>你会看到：</p>
+<p>有的会有<strong>WARN</strong>,不用担心，这不会影响你正常使用。接下来输入</p>
+<p><code>npm install hexo --save</code></p>
+<p>这时命令行会刷出一大堆白字，那是安装配置文件，看看Hexo是否安装完成，在命令行输入：</p>
+<p><code>hexo -v</code></p>
+<p>看到如下说明安装成功</p>
+<h2 id="配置Hexo"><a href="#配置Hexo" class="headerlink" title="配置Hexo"></a>配置Hexo</h2><h3 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h3><p><code>hexo init</code></p>
+<p><code>npm install</code></p>
+<p>npm会自动安装所需要的而组件，等待npm操作，这个时间可能比较长，耐心等待。</p>
+<h4 id="初次体验Hexo"><a href="#初次体验Hexo" class="headerlink" title="初次体验Hexo"></a>初次体验Hexo</h4><p><code>hexo g</code></p>
+<p><code>hexo s</code></p>
+<p><code>INFO  Hexo is running at &lt;http://0.0.0.0:4000/&gt;. Press Ctrl+C to stop.</code></p>
+<p>这个时候打开浏览器输入 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>你将会看到：</p>
+<p>到目前为止,Hexo在本地配置全都结束了。</p>
+<h2 id="配置Git个人信息"><a href="#配置Git个人信息" class="headerlink" title="配置Git个人信息"></a>配置Git个人信息</h2><p>1、设置Git的<strong>user name</strong>和<strong>email</strong>：（如果之前已经配置跳过这一步）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;mengse&quot;</span><br><span class="line">git config --global user.email &quot;mengse@163.com&quot;</span><br></pre></td></tr></table></figure>
+<p>2、生成秘钥</p>
+<p><code>ssh-keygen -t rsa -C &quot;mengse@163.com&quot;</code></p>
+<p><strong>id_rsa</strong>和<strong>id_rsa.pub</strong>两个文件夹默认路径为<strong>C:\Users\Administrator.ssh</strong></p>
+<p>3、将SSH KEY联系</p>
+<p>登录Github点击右上角你的头像 进入<strong>Settings</strong>,找到<strong>SSH AND GPG KEY </strong>进入将title和key（第二步生成）复制进去即可</p>
+<h2 id="配置Deployment"><a href="#配置Deployment" class="headerlink" title="配置Deployment"></a>配置Deployment</h2><p>在<strong>_config.yml</strong>文件中（注意这个文件夹中冒号之后要留一个空格），找到<strong>Deployment</strong>,然后按照如下修改：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:yourname/yourname.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>比如我的仓库的地址是git@github.com:mengse/mengse.github.io.git，所以配置如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:mengse/mengse.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<h2 id="写博客，发布文章"><a href="#写博客，发布文章" class="headerlink" title="写博客，发布文章"></a>写博客，发布文章</h2><p>博客的文章是用md格式写入和发布的，首先你需要下载一个<strong>md</strong>文件的编辑器（我使用的是<strong><em>Typora</em></strong>），然后学习一下md文件的语法格式就可以开始写博客啦</p>
+<p>你可以把文章写好之后，保存在<strong>D:\hexo\source_posts</strong>的路径下然后用命令上传</p>
+<p>或者你可以执行以下命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">exo new post &quot;article title&quot;</span><br></pre></td></tr></table></figure>
+<p>你将会看见 <strong>article title.md </strong>打开它开始编写博客</p>
+<p>文章编辑好之后，运行命令，部署命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g </span><br><span class="line">hexo d</span><br><span class="line">//hexo d -g 这条命令相当于以上两条</span><br></pre></td></tr></table></figure>
+<p>部署成功之后 访问你的地址 <a href="https://yourname.github.io" target="_blank" rel="noopener">https://yourname.github.io</a> </p>
+<p>(这里输入我的地址 <a href="https://mengse.github.io" target="_blank" rel="noopener">https://mengse.github.io</a>) 将可以看到生成的文章</p>
+<h2 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h2><p>###安装主题</p>
+<p>Hexo的主题 你可以访问<a href="https://hexo.io/themes/" target="_blank" rel="noopener">官网</a>看上哪个挑哪个，如果有前端基础也可以自己写，挑好之后点击<strong>蓝色</strong>字母，进入github网站，这个时候有个绿色的<strong>clone or download</strong> 复制链接 </p>
+<p>你可以直接下载然后解压到D:\hexo\themes</p>
+<p>也可以使用命令行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+<p>其中 网站部分为你复制的链接</p>
+<h3 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h3><p>下载完成之后 打开你根目录下的<strong>_config.yml</strong>文件，修改<strong>theme</strong>： 文件名 比如 theme ：landscape 将landscape修改为你挑选主题的文件名</p>
+<h3 id="验证主题"><a href="#验证主题" class="headerlink" title="验证主题"></a>验证主题</h3><p>启动Hexo本地站点</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>在输入之后观察命令行是否有异常信息，当出现如下字符时，即可访问站点</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+<p>此时即可使用浏览器访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> ，检查站点是否正确运行。</p>
+<h2 id="添加插件"><a href="#添加插件" class="headerlink" title="添加插件"></a>添加插件</h2><p>关于如何修改插件和主题属性的问题：在Hexo主题官网中 你进入github中会有如何配置主题属性和插件等</p>
+<h3 id="附言"><a href="#附言" class="headerlink" title="附言"></a>附言</h3><p><em>由于编写本次文章图床验证还没有得到通过，本篇文章图片暂不上传</em></p>
+<p>参考文献 ：</p>
+<p> <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo文档</a></p>
+<p><a href="http://www.runoob.com/git/git-tutorial.html" target="_blank" rel="noopener"> git教程</a></p>
+<p>标签：Hexo Github</p>
+<p><strong>本文只是简单介绍Github+hexo搭建博客教程，更多具体详细步骤请多参考更多博客内容，谢谢！</strong></p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2018/01/22/HEXO+Github,搭建博客也没有那么难/" data-title="Github+hexo,搭建博客也没有那么难 | Mengse&#39;Blog" data-tsina="538838438" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2018/01/18/hello-world/"  title="ABOUT ME">
+ <strong>下一篇：</strong><br/> 
+ <span>ABOUT ME
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#搭建步骤"><span class="toc-number">1.</span> <span class="toc-text">搭建步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#简单扫盲"><span class="toc-number">2.</span> <span class="toc-text">简单扫盲</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开始配置环境"><span class="toc-number">3.</span> <span class="toc-text">开始配置环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#GIT"><span class="toc-number">3.1.</span> <span class="toc-text">GIT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Github账户注册与配置"><span class="toc-number">3.2.</span> <span class="toc-text">Github账户注册与配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Hexo"><span class="toc-number">4.</span> <span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置Hexo"><span class="toc-number">5.</span> <span class="toc-text">配置Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#初始化Hexo"><span class="toc-number">5.1.</span> <span class="toc-text">初始化Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#初次体验Hexo"><span class="toc-number">5.1.1.</span> <span class="toc-text">初次体验Hexo</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置Git个人信息"><span class="toc-number">6.</span> <span class="toc-text">配置Git个人信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置Deployment"><span class="toc-number">7.</span> <span class="toc-text">配置Deployment</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#写博客，发布文章"><span class="toc-number">8.</span> <span class="toc-text">写博客，发布文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改主题"><span class="toc-number">9.</span> <span class="toc-text">修改主题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#启用主题"><span class="toc-number">9.1.</span> <span class="toc-text">启用主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#验证主题"><span class="toc-number">9.2.</span> <span class="toc-text">验证主题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加插件"><span class="toc-number">10.</span> <span class="toc-text">添加插件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#附言"><span class="toc-number">10.1.</span> <span class="toc-text">附言</span></a></li></ol></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+
+
+  
+
+  
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="htps://mengse.github.io" target="_blank" title="Mengse&#39;s Blog">Mengse&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">Weibo</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=538838438&verifier=b3593ceb&dpc=1"></iframe>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m mengse in CUIT <br/>
+			This is my blog,believe it or not.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/538838438" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:361723098@qq.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2018 
+		
+		<a href="/about" target="_blank" title="MENGSE">MENGSE</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
